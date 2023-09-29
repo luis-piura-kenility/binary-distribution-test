@@ -17,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>TruvideoSdkMedia</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>TruvideoSdkMediaTargets</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>binary-distribution-test</key>
 		<dict>
 			<key>primary</key>
