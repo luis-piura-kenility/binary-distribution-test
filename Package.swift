@@ -30,7 +30,7 @@ let package = Package(
                 "TruvideoSdkMedia",
                 .product(name: "AWSS3", package: "aws-sdk-ios-spm"),
                 .product(name: "AWSCore", package: "aws-sdk-ios-spm"),
-                .product(name: "AWSCognitoAuth", package: "aws-sdk-ios-spm"),
+                .product(name: "AWSCognitoIdentityProvider", package: "aws-sdk-ios-spm"),
                 .product(name: "AWSCognitoIdentityProviderASF", package: "aws-sdk-ios-spm")
             ],
             path: "Sources"
