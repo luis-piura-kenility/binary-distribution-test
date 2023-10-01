@@ -14,19 +14,25 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/aws-amplify/aws-sdk-ios-spm", .exact("2.33.4"))
+        .package(url: "https://github.com/aws-amplify/aws-sdk-ios-spm", exact: "2.33.4")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TruvideoSdkMedia",
-            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.5/TruvideoSdkMedia.xcframework.zip",
+            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.6/TruvideoSdkMedia.xcframework.zip",
             checksum: "7ab1bc8174f3524246742e105ce7affe10d8f8a960b51b82f99d09ed542c749f"
         ),
         .target(
             name: "TruvideoSdkMediaTargets",
-            dependencies: ["TruvideoSdkMedia"],
+            dependencies: [
+                "TruvideoSdkMedia",
+                .product(name: "AWSS3", package: "aws-sdk-ios-spm"),
+                .product(name: "AWSCore", package: "aws-sdk-ios-spm"),
+                .product(name: "AWSCognitoAuth", package: "aws-sdk-ios-spm"),
+                .product(name: "AWSCognitoIdentityProviderASF", package: "aws-sdk-ios-spm")
+            ],
             path: "Sources"
         ),
     ]
