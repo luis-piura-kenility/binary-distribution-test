@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "truvideoSdkMedia",
+    name: "TruvideoSdkMedia",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "truvideoSdkMedia",
+            name: "TruvideoSdkMedia",
             targets: ["TruvideoSdkMediaTargets"]),
     ],
     dependencies: [
@@ -21,7 +21,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TruvideoSdkMedia",
-            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.10/TruvideoSdkMedia.xcframework.zip",
+            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.11/TruvideoSdkMedia.xcframework.zip",
             checksum: "ca2bfae5dcc96431eb216ada2fc239d2f6090fc9972ba46f2d94f1487ac30ac0"
         ),
         .binaryTarget(
