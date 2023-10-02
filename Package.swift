@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "TruvideoSdkMedia",
+    name: "truvideoSdkMedia",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "TruvideoSdkMedia",
+            name: "truvideoSdkMedia",
             targets: ["TruvideoSdkMediaTargets"]),
     ],
     dependencies: [
