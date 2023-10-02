@@ -21,13 +21,19 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TruvideoSdkMedia",
-            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.6/TruvideoSdkMedia.xcframework.zip",
-            checksum: "7ab1bc8174f3524246742e105ce7affe10d8f8a960b51b82f99d09ed542c749f"
+            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.9/TruvideoSdkMedia.xcframework.zip",
+            checksum: "ecdee4c03970de1cb5744b98d2b09c420ff518845afcbb4e470bc5fb94bd4795"
+        ),
+        .binaryTarget(
+            name: "Shared",
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.18/shared.xcframework.zip",
+            checksum: "4445be410f9722f25088b0ff1b43af28788a19a286ab18b51e856ac25d92b6a6"
         ),
         .target(
             name: "TruvideoSdkMediaTargets",
             dependencies: [
-                "TruvideoSdkMedia",
+                .target(name: "TruvideoSdkMedia"),
+                .target(name: "Shared"),
                 .product(name: "AWSS3", package: "aws-sdk-ios-spm"),
                 .product(name: "AWSCore", package: "aws-sdk-ios-spm"),
                 .product(name: "AWSCognitoIdentityProvider", package: "aws-sdk-ios-spm"),
