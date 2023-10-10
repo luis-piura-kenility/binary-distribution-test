@@ -21,8 +21,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TruvideoSdkMedia",
-            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.29/TruvideoSdkMedia.xcframework.zip",
-            checksum: "d1332caf21068c7b6a67cdfc17bd60a368e59bff060ffa7c776c6e71b221a072"
+            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.30/TruvideoSdkMedia.xcframework.zip",
+            checksum: "2df4edf2946f5971e5b30cf281bf8e5fc872df96435648dc7fc1090fa90146d0"
         ),
         .target(
             name: "TruvideoSdkMediaTargets",
