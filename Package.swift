@@ -20,8 +20,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TruvideoSdkNoiseCancelling",
-            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.32/TruvideoSdkNoiseCancelling.xcframework.zip",
-            checksum: "17e5c04c18ae9a5a765fcf9ff82176124bb542d8cea4260e4152c3534f6cd948"
+            url: "https://github.com/luis-piura-kenility/binary-distribution-test/releases/download/0.0.33/TruvideoSdkNoiseCancelling.xcframework.zip",
+            checksum: "9d5cef0f1526fc6f77de2d05cff7eb20a2f74656667c419721fbf963ffa1ee13"
         ),
         .target(
             name: "TruvideoSdkNoiseCancellingTargets",
